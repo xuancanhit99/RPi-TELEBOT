@@ -73,7 +73,7 @@ def handle(msg):
         p = subprocess.Popen("lsusb", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).communicate()[0]
         bot.sendMessage(chat_id, str(p))
 # Enter your telegram token below
-bot = telepot.Bot('Enter your Telegram bot API token here')
+bot = telepot.Bot('6262243181:AAHGZIaBl4t_Pi5e7tUR9laRd5L714ItCL8')
 print (bot.getMe())
 
 # Start listening to the telegram bot and whenever a message is  received, the handle function will be called.
