@@ -29,7 +29,7 @@ def handle(msg):
     temp = cpu.temperature
     # Comparing the incoming message to send a reply according to it
     if command == '/help':
-        bot.sendMessage (chat_id, str("ledon1 - Switch on LED 1\nledoff1 - Switch off LED 1\nledon2 - Switch on LED 2\nledoff2 - Switch off LED 2\ncpu - Get CPU info\nusb - See connected USB devices\nhi - To check if online\ntime - Returns time\ndate - Returns date\ntemp - CPU Temperature\nrepoupdate - update repositories \nupgrade - upgrade packages\nshutdown - Shutdown RPi\nreboot - Reboot RPi"))
+        bot.sendMessage (chat_id, str("⚪ /ledon1 - Switch on LED 1\n⚪ /ledoff1 - Switch off LED 1\n⚪ /ledon2 - Switch on LED 2\n⚪ /ledoff2 - Switch off LED 2\n⚪ /cpu - Get CPU info\n⚪ /usb - See connected USB devices\n⚪ /hi - To check if online\n⚪ /time - Returns time\n⚪ /date - Returns date\n⚪ /temp - CPU Temperature\n⚪ /repoupdate - update repositories \n⚪ /upgrade - upgrade packages\n⚪ /shutdown - Shutdown RPi\n⚪ /reboot - Reboot RPi"))
     elif command == '/hi':
         bot.sendMessage (chat_id, str("Hi. BLEEP..BLOP.., bot is online"))
     elif command == '/time':
