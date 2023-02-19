@@ -31,7 +31,7 @@ def handle(msg):
     if command == '/help':
         bot.sendMessage (chat_id, str("⚪ /ledon1 - Switch on LED 1\n⚪ /ledoff1 - Switch off LED 1\n⚪ /ledon2 - Switch on LED 2\n⚪ /ledoff2 - Switch off LED 2\n⚪ /cpu - Get CPU info\n⚪ /usb - See connected USB devices\n⚪ /hi - To check if online\n⚪ /time - Returns time\n⚪ /date - Returns date\n⚪ /temp - CPU Temperature\n⚪ /repoupdate - update repositories \n⚪ /upgrade - upgrade packages\n⚪ /shutdown - Shutdown RPi\n⚪ /reboot - Reboot RPi"))
     elif command == '/hi':
-        bot.sendMessage (chat_id, str("Hi. BLEEP..BLOP.., bot is online"))
+        bot.sendMessage (chat_id, str("Hi, Shinz... rpi-bot is Online"))
     elif command == '/time':
         bot.sendMessage(chat_id, str("Time: ") + str(now.hour) + str(":") + str(now.minute) + str(":") + str(now.second))
     elif command == '/date':
