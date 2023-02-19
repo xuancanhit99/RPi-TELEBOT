@@ -44,7 +44,7 @@ Python based Telegram bot to monitor and control the headless Raspberry Pi serve
 ## Tips:
 - See more about telegram bots here: https://core.telegram.org/bots
 - As the /repoupdate and /upgrade takes time you can use /ledon1 or /ledon2 command to alert you when the process is complete.
-- If you are running this script on boot [systemd users] , refer : https://www.freedesktop.org/wiki/Software/systemd/NetworkTarget/ 
+- If you are running this script on boot [systemd users] , refer : https://www.dexterindustries.com/howto/run-a-program-on-your-raspberry-pi-at-startup/
 ## Screenshots:
 ![Screenshot1](https://github.com/RNA3210d/RPi-TELEBOT/blob/master/snip1.png)
 ![Commands list](https://github.com/RNA3210d/RPi-TELEBOT/blob/master/scrn1.jpg)
