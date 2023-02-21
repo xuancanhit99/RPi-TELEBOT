@@ -29,7 +29,7 @@ def handle(msg):
     temp = cpu.temperature
     # Comparing the incoming message to send a reply according to it
     if command == '/help':
-        bot.sendMessage (chat_id, str("⚪ /ledon1 - Switch on LED 1\n⚪ /ledoff1 - Switch off LED 1\n⚪ /ledon2 - Switch on LED 2\n⚪ /ledoff2 - Switch off LED 2\n⚪ /cpu - Get CPU info\n⚪ /usb - See connected USB devices\n⚪ /hi - To check if online\n⚪ /time - Returns time\n⚪ /date - Returns date\n⚪ /temp - CPU Temperature\n⚪ /repoupdate - update repositories \n⚪ /upgrade - upgrade packages\n⚪ /shutdown - Shutdown RPi\n⚪ /reboot - Reboot RPi"))
+        bot.sendMessage (chat_id, str("⚪ /ledon1 - Switch on LED 1\n⚪ /ledoff1 - Switch off LED 1\n⚪ /ledon2 - Switch on LED 2\n⚪ /ledoff2 - Switch off LED 2\n⚪ /cpu - Get CPU info\n⚪ /usb - See connected USB devices\n⚪ /hi - To check if online\n⚪ /time - Returns time\n⚪ /date - Returns date\n⚪ /temp - CPU Temperature\n⚪ /update - update repositories \n⚪ /upgrade - upgrade packages\n⚪ /shutdown - Shutdown RPi\n⚪ /reboot - Reboot RPi"))
     elif command == '/hi':
         bot.sendMessage (chat_id, str("Hi, Shinz... rpi-bot is Online"))
     elif command == '/time':
@@ -50,7 +50,7 @@ def handle(msg):
         GPIO.output(led2, False)
     elif command == '/temp':
         bot.sendMessage(chat_id, str("CPU temp. : ") + str(temp))
-    elif command == '/repoupdate':
+    elif command == '/update':
         bot.sendMessage(chat_id, str("Updating repos..."))
         p = subprocess.Popen("apt-get update", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).communicate()[0]
         bot.sendMessage(chat_id, str(p))
